@@ -18,7 +18,7 @@ class Animals:
 
         self.image_path = os.path.join(gc.Asset_dir, self.name)
         self.image = image.load(self.image_path)
-        self.image = transform.scale(self.image, (gc.Images_size -2*gc.Margin, gc.Images_size -2*gc.Margin ))
+        self.image = transform.scale(self.image, (gc.Img_size -2*gc.Margin, gc.Img_size -2*gc.Margin ))
         self.box = self.image.copy()
         self.box.fill((200,200,200))
         self.skip = False
